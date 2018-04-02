@@ -23,3 +23,5 @@ body {
     grid-template-areas: "header" "section" "footer";
     grid-template-rows: 80px 1fr 50px;
     grid-template-columns: 1fr; } }
+h1 {
+  color: red; }
