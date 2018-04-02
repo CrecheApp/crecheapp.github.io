@@ -1,25 +1,34 @@
 /*Important Instructions :- Please make a comment block before makin a new component */
 /*--------------Importing Components Files---------------------*/
+
 /*--------------Grid System---------------------*/
 body {
   display: grid;
-  grid-template-areas: "header" "section" "footer";
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
   grid-template-rows: 80px 1fr 50px;
-  grid-template-columns: 1fr;
+  grid-template-columns:1fr;
   height: 100vh;
-  margin: 0; }
-
+  margin: 0;
+}
 #pageHeader {
-  grid-area: header; }
-
+  grid-area: header;
+}
 #pageFooter {
-  grid-area: footer; }
-
+  grid-area: footer;
+}
 #mainSection {
-  grid-area: section; }
-
+  grid-area: section;
+}
 @media all and (max-width: 575px) {
   body {
-    grid-template-areas: "header" "section" "footer";
+    grid-template-areas:
+      "header"
+      "section"
+      "footer";
     grid-template-rows: 80px 1fr 50px;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr;
+ }
+}
