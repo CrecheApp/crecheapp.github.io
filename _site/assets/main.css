@@ -4,14 +4,10 @@
 body {
   display: grid;
   grid-template-areas: "header" "section" "footer";
-  grid-template-rows: 80px 1fr 50px;
+  grid-template-rows: 100px 1fr auto;
   grid-template-columns: 1fr;
   height: 100vh;
   margin: 0; }
-
-#pageHeader {
-  background: yellow;
-  grid-area: header; }
 
 #pageFooter {
   grid-area: footer; }
@@ -19,10 +15,50 @@ body {
 #mainSection {
   grid-area: section; }
 
-@media all and (max-width: 575px) {
-  body {
-    grid-template-areas: "header" "section" "footer";
-    grid-template-rows: 80px 1fr 50px;
-    grid-template-columns: 1fr; } }
-h1 {
-  color: yellow; }
+/*-----------------Header-------------------------*/
+#pageHeader {
+  grid-area: header;
+  background: -webkit-gradient(linear, left top, left bottom, from(#750075), to(#430098));
+  background: linear-gradient(#750075, #430098);
+  text-align: center; }
+  #pageHeader #satya {
+    height: 80px;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #pageHeader #jecrc {
+    height: 80px;
+    float: right;
+    margin-left: 1%;
+    margin-right: 1%; }
+  #pageHeader #heading {
+    font-size: 6vh;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    text-transform: uppercase; }
+  #pageHeader .heading_cont {
+    margin-top: 10px; }
+  @media screen and (max-width: 450px) {
+    #pageHeader #heading {
+      font-size: 23px; } }
+  @media screen and (min-width: 550px) and (max-width: 1366px) {
+    #pageHeader #heading {
+      font-size: 40px; } }
+
+/*-----------------Footer-------------------------*/
+#pageFooter {
+  grid-area: footer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#750075), to(#430098));
+  background: linear-gradient(#750075, #430098);
+  text-align: center; }
+  #pageFooter #footer_text {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px; }
+  #pageFooter .dev_name {
+    color: #f6ed0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+    text-decoration: none; }

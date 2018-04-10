@@ -1,39 +1,83 @@
 /*Important Instructions :- Please make a comment block before makin a new component */
 /*--------------Importing Components Files---------------------*/
-
+@import "creche";
+@import "govt";
 /*--------------Grid System---------------------*/
 body {
   display: grid;
-  grid-template-areas:
-    "header"
-    "section"
-    "footer";
-  grid-template-rows: 80px 1fr 50px;
-  grid-template-columns:1fr;
+  grid-template-areas: "header" "section" "footer";
+  grid-template-rows: 100px 1fr auto;
+  grid-template-columns: 1fr;
   height: 100vh;
   margin: 0;
 }
-#pageHeader {
-  background: yellow;
-  grid-area: header;
-}
+
 #pageFooter {
   grid-area: footer;
 }
+
 #mainSection {
   grid-area: section;
 }
-@media all and (max-width: 575px) {
-  body {
-    grid-template-areas:
-      "header"
-      "section"
-      "footer";
-    grid-template-rows: 80px 1fr 50px;
-    grid-template-columns: 1fr;
- }
-}
+/*-----------------Header-------------------------*/
+#pageHeader {
+  grid-area: header;
+  background: -webkit-gradient(linear,left top, left bottom,from(rgb(117, 0, 117)),to(rgb(67, 0, 152)));
+  background: linear-gradient(rgb(117, 0, 117),rgb(67, 0, 152));
+  text-align: center;
 
-h1{
-  color: yellow;
+  #satya {
+    height: 80px;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #jecrc {
+    height: 80px;
+    float: right;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  #heading {
+    font-size: 6vh;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .heading_cont {
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 450px) {
+    #heading {
+      font-size: 23px;
+    }
+  }
+  @media screen and (min-width:550px) and (max-width: 1366px) {
+    #heading {
+      font-size: 40px;
+    }
+  }
+}
+/*-----------------Footer-------------------------*/
+#pageFooter {
+  grid-area: footer;
+  background: -webkit-gradient(linear,left top, left bottom,from(rgb(117, 0, 117)),to(rgb(67, 0, 152)));
+  background: linear-gradient(rgb(117, 0, 117),rgb(67, 0, 152));
+  text-align: center;
+  #footer_text{
+    color:white;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .dev_name{
+    color:rgb(246, 237, 10);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+    text-decoration: none;
+  }
 }
