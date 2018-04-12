@@ -1,0 +1,25 @@
+body{
+    background-color: whitesmoke;
+}
+
+h3{
+    margin: 20px;
+    color: orangered;
+    text-align: center;
+}
+
+.login{
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+    
+}
+
+.signup{
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+    
+}
