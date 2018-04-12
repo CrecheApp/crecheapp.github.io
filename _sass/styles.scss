@@ -2,7 +2,11 @@
 /*--------------Importing Components Files---------------------*/
 @import "creche";
 @import "govt";
+@import "components";
 /*--------------Grid System---------------------*/
+html{
+    overflow-x: hidden;
+}
 body {
   display: grid;
   grid-template-areas: "header" "section" "footer";

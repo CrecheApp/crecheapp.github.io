@@ -1,0 +1,31 @@
+.tab-2 {
+  width: 48%;
+  margin: 5px 2px 5px 2px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 2px 2px rgba(#7d7d7d, 0.75);
+  box-shadow: 5px 2px 2px rgba(#7d7d7d, 0.75);
+  border: none;
+  background: -webkit-gradient(linear,left top, left bottom,from(rgb(0, 17, 108)),to(rgb(22, 78, 175)));
+  background: linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175));
+  color: white;
+  font-size: 20px;
+}
+.tab-3 {
+  width: 30%;
+  margin: 5px 2px 5px 2px;
+  padding: 5px;
+  -webkit-box-shadow: 5px 2px 2px rgba(#7d7d7d, 0.75);
+  box-shadow: 5px 2px 2px rgba(#7d7d7d, 0.75);
+  border: none;
+  background: -webkit-gradient(linear,left top, left bottom,from(rgb(0, 17, 108)),to(rgb(22, 78, 175)));
+  background: linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175));
+  color: white;
+  font-size: 20px;
+}
+.default_tab{
+  background: -webkit-gradient(linear,left top, left bottom,from(rgb(241, 139, 5)),to(rgb(235, 50, 9)));
+  background: linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9));
+}
+.tab_cont {
+  text-align: center;
+}

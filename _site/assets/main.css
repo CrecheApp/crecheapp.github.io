@@ -1,6 +1,136 @@
 /*Important Instructions :- Please make a comment block before makin a new component */
 /*--------------Importing Components Files---------------------*/
+/*-------------Details------------------*/
+#crecheDetails #div2 {
+  display: none; }
+#crecheDetails .ed_cr_dt h3 {
+  margin: 20px;
+  color: orangered;
+  text-align: center; }
+#crecheDetails .ed_cr_dt .login {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 20%;
+  margin: 50px auto; }
+#crecheDetails .ed_cr_dt .signup {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 50%;
+  margin: 50px auto; }
+
+/*-------------Login/Signup------------------*/
+#crecheLogin #div2 {
+  display: none; }
+#crecheLogin .lg_cr {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 20%;
+  margin: 50px auto; }
+#crecheLogin .sg_cr {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 50%;
+  margin: 50px auto; }
+
+/*-------------Staff------------------*/
+#crecheStaff #div2,
+#crecheStaff #div3 {
+  display: none; }
+#crecheStaff .vw_cr_st .tableview, #crecheStaff .dl_cr_st .tableview {
+  background-color: aliceblue; }
+#crecheStaff .vw_cr_st table,
+#crecheStaff .vw_cr_st td,
+#crecheStaff .vw_cr_st th, #crecheStaff .dl_cr_st table,
+#crecheStaff .dl_cr_st td,
+#crecheStaff .dl_cr_st th {
+  border: 1px solid black;
+  border-collapse: collapse; }
+#crecheStaff .vw_cr_st td,
+#crecheStaff .vw_cr_st th, #crecheStaff .dl_cr_st td,
+#crecheStaff .dl_cr_st th {
+  padding: 10px; }
+#crecheStaff .vw_cr_st th, #crecheStaff .dl_cr_st th {
+  text-align: left; }
+#crecheStaff .vw_cr_st table tr:nth-child(even), #crecheStaff .dl_cr_st table tr:nth-child(even) {
+  background-color: lightblue; }
+#crecheStaff .vw_cr_st table tr:nth-child(odd), #crecheStaff .dl_cr_st table tr:nth-child(odd) {
+  background-color: white; }
+#crecheStaff .vw_cr_st table th, #crecheStaff .dl_cr_st table th {
+  background-color: black;
+  color: white; }
+#crecheStaff .ad_cr_st {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 50%;
+  margin: 50px auto; }
+
+/*-------------Staff------------------*/
+#crecheStudents #div2,
+#crecheStudents #div3 {
+  display: none; }
+#crecheStudents .vw_cr_chl .tableview, #crecheStudents .dl_cr_chl .tableview {
+  background-color: aliceblue; }
+#crecheStudents .vw_cr_chl table,
+#crecheStudents .vw_cr_chl td,
+#crecheStudents .vw_cr_chl th, #crecheStudents .dl_cr_chl table,
+#crecheStudents .dl_cr_chl td,
+#crecheStudents .dl_cr_chl th {
+  border: 1px solid black;
+  border-collapse: collapse; }
+#crecheStudents .vw_cr_chl td,
+#crecheStudents .vw_cr_chl th, #crecheStudents .dl_cr_chl td,
+#crecheStudents .dl_cr_chl th {
+  padding: 10px; }
+#crecheStudents .vw_cr_chl th, #crecheStudents .dl_cr_chl th {
+  text-align: left; }
+#crecheStudents .vw_cr_chl table tr:nth-child(even), #crecheStudents .dl_cr_chl table tr:nth-child(even) {
+  background-color: lightblue; }
+#crecheStudents .vw_cr_chl table tr:nth-child(odd), #crecheStudents .dl_cr_chl table tr:nth-child(odd) {
+  background-color: white; }
+#crecheStudents .vw_cr_chl table th, #crecheStudents .dl_cr_chl table th {
+  background-color: black;
+  color: white; }
+#crecheStudents .ad_cr_chl {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 50%;
+  margin: 50px auto; }
+
+.tab-2 {
+  width: 48%;
+  margin: 5px 2px 5px 2px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 2px 2px rgba(125, 125, 125, 0.75);
+  box-shadow: 5px 2px 2px rgba(125, 125, 125, 0.75);
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00116c), to(#164eaf));
+  background: linear-gradient(#00116c, #164eaf);
+  color: white;
+  font-size: 20px; }
+
+.tab-3 {
+  width: 30%;
+  margin: 5px 2px 5px 2px;
+  padding: 5px;
+  -webkit-box-shadow: 5px 2px 2px rgba(125, 125, 125, 0.75);
+  box-shadow: 5px 2px 2px rgba(125, 125, 125, 0.75);
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00116c), to(#164eaf));
+  background: linear-gradient(#00116c, #164eaf);
+  color: white;
+  font-size: 20px; }
+
+.default_tab {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f18b05), to(#eb3209));
+  background: linear-gradient(#f18b05, #eb3209); }
+
+.tab_cont {
+  text-align: center; }
+
 /*--------------Grid System---------------------*/
+html {
+  overflow-x: hidden; }
+
 body {
   display: grid;
   grid-template-areas: "header" "section" "footer";

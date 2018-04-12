@@ -1,0 +1,136 @@
+/*-------------Details------------------*/
+#crecheDetails {
+  #div2 {
+    display: none;
+  }
+
+  .vw_cr_dt {}
+
+  .ed_cr_dt {
+    h3 {
+      margin: 20px;
+      color: orangered;
+      text-align: center;
+    }
+
+    .login {
+      padding: 20px;
+      background-color: #9a9aea;
+      width: 20%;
+      margin: 50px auto;
+    }
+
+    .signup {
+      padding: 20px;
+      background-color: #9a9aea;
+      width: 50%;
+      margin: 50px auto;
+    }
+  }
+}
+/*-------------Login/Signup------------------*/
+#crecheLogin {
+  #div2 {
+    display: none;
+  }
+
+  .lg_cr {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 20%;
+    margin: 50px auto;
+  }
+
+  .sg_cr {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+  }
+}
+/*-------------Staff------------------*/
+#crecheStaff {
+  #div2,
+  #div3 {
+    display: none;
+  }
+
+  .vw_cr_st, .dl_cr_st {
+    .tableview {
+      background-color: aliceblue;
+    }
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td,
+    th {
+      padding: 10px;
+    }
+    th {
+      text-align: left;
+    }
+    table tr:nth-child(even) {
+      background-color: lightblue;
+    }
+    table tr:nth-child(odd) {
+      background-color: white;
+    }
+    table th {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .ad_cr_st {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+  }
+}
+
+/*-------------Staff------------------*/
+#crecheStudents{
+  #div2,
+  #div3 {
+    display: none;
+  }
+  .vw_cr_chl, .dl_cr_chl {
+    .tableview {
+      background-color: aliceblue;
+    }
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td,
+    th {
+      padding: 10px;
+    }
+    th {
+      text-align: left;
+    }
+    table tr:nth-child(even) {
+      background-color: lightblue;
+    }
+    table tr:nth-child(odd) {
+      background-color: white;
+    }
+    table th {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .ad_cr_chl {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+  }
+}

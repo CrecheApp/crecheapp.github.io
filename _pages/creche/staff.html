@@ -1,0 +1,203 @@
+---
+layout: default
+title: Creche Satff Details
+permalink: /creche/staff
+---
+<div id='crecheStaff'>
+  <div class="tab_cont">
+    <button type="button" id="tab1" class="tab-3 default_tab">View Staff</button>
+    <button type="button" id="tab2" class="tab-3">Add Staff</button>
+    <button type="button" id="tab3" class="tab-3">Delete Staff</button>
+  </div>
+
+  <div id="div1" class="vw_cr_st">
+    <div class="tableview">
+      <table style="width: 100%">
+        <tr>
+          <th>S.No</th>
+          <th>NAME</th>
+          <th>DOB</th>
+          <th>Deignation</th>
+          <th>Address</th>
+          <th>Contact No.</th>
+          <th>Adhaar No.</th>
+          <th>Qualifications</th>
+          <th>Category</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="div2" class="ad_cr_st">
+    <form action="#">
+      <fieldset>
+        <legend>Student Details:</legend>
+        <label for="Name"> <strong>Name:</strong></label>
+        <input type="text" name="Name" placeholder="abcd">
+        <br><br>
+        <label for="Dob"> <strong>Date of Birth:</strong></label>
+        <input type="date" name="Name" placeholder="abcd">
+        <br><br>
+        <label for=" Designation"> <strong>Designation</strong></label>
+        <input type="text" name=" Designation" placeholder="abcd">
+        <br><br>
+        <label for="address"><strong>Address:</strong></label>
+        <input type="email" name="address" placeholder="">
+        <br><br>
+        <label for="Contact No."> <strong>Contact No.</strong></label>
+        <input type="text" name="Contact No." placeholder="abcd">
+        <br><br>
+        <label for=" Adhaar No."> <strong>Adhaar No.:</strong></label>
+        <input type="text" name="Adhaar No." placeholder="abcd">
+        <br><br>
+        <label for="Category"><strong>Qualification:</strong></label>
+        <input type="text" name="Category" list="namelist">
+        <datalist id="namelist">
+                  <option value="10th pass">
+                  <option value="12th pass">
+                  <option value="Graduation">
+                  <option value="Others">
+              </datalist>
+        <br><br>
+        <label for="Category"><strong>Category:</strong></label>
+        <input type="text" name="Category" list="namelist">
+        <datalist id="namelist">
+                  <option value="General">
+                  <option value="SC/St">
+                  <option value="OBC">
+                  <option value="Others">
+              </datalist>
+        <br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+
+  <div id="div3" class="dl_cr_st">
+    <div class="tableview">
+      <table style="width: 100%">
+        <tr>
+          <th>S.No</th>
+          <th>NAME</th>
+          <th>DOB</th>
+          <th>Deignation</th>
+          <th>Address</th>
+          <th>Contact No.</th>
+          <th>Adhaar No.</th>
+          <th>Qualifications</th>
+          <th>Category</th>
+          <th>ACTION</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td> Kanta Devir</td>
+          <td>13/03/1965</td>
+          <td>Seeker</td>
+          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
+          <td>9008748221</td>
+          <td>4325251</td>
+          <td>Graduation</td>
+          <td>General</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  div1 = document.getElementById("div1")
+  div2 = document.getElementById("div2")
+  div3 = document.getElementById("div3")
+  btn1 = document.getElementById("tab1")
+  btn2 = document.getElementById("tab2")
+  btn3 = document.getElementById("tab3")
+
+  function selectTab1() {
+    div1.style.display = "block";
+    div2.style.display = "none";
+    div3.style.display = "none";
+    btn1.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  function selectTab2() {
+    div1.style.display = "none";
+    div2.style.display = "block";
+    div3.style.display = "none";
+    btn2.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  function selectTab3() {
+    div1.style.display = "none";
+    div3.style.display = "block";
+    div2.style.display = "none";
+    btn3.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  btn1.addEventListener("click", selectTab1, false);
+  btn2.addEventListener("click", selectTab2, false);
+  btn3.addEventListener("click", selectTab3, false);
+</script>

@@ -1,0 +1,84 @@
+---
+layout: default
+title: Creche Details
+permalink: /creche/details
+---
+<div id='crecheDetails'>
+  <div class="tab_cont">
+    <button type="button" id="tab1" class="tab-2 default_tab">View Details</button>
+    <button type="button" id="tab2" class="tab-2">Edit Details</button>
+  </div>
+
+  <div id="div1" class="vw_cr_dt">
+  </div>
+  <div id="div2" class="ed_cr_dt">
+
+    <div class="signup">
+      <form action="#">
+        <fieldset>
+          <legend>Student Details:</legend>
+          <label for="Name"> <strong>Name:</strong></label>
+          <input type="text" name="Name" placeholder="abcd">
+          <br><br>
+          <label for="State"><strong>State:</strong></label>
+          <input type="text" name="State" list="namelist">
+          <datalist id="namelist">
+                   <option value="Rajasthan">
+                   <option value="Madhya Pradesh">
+                   <option value="Maharashtra">
+                   <option value="Oddisa">
+               </datalist>
+          <br><br>
+          <label for="City"><strong>City:</strong></label>
+          <input type="text" name="City" list="namelist">
+          <datalist id="namelist">
+                   <option value="Jaipur">
+                   <option value="Kanpur">
+                   <option value="Mumbai">
+                   <option value="Ambala">
+               </datalist>
+          <br><br>
+          <label for="address"><strong>Address:</strong></label>
+          <input type="email" name="address" placeholder="">
+          <br><br>
+          <label for="Contact No."> <strong>Contact No.</strong></label>
+          <input type="text" name="Contact No." placeholder="abcd">
+          <br><br>
+          <label for="Bank Name"> <strong>Bank Name</strong></label>
+          <input type="text" name="Bank Name" placeholder="abcd">
+          <br><br><label for="Bank Account No."> <strong>Bank Account No.</strong></label>
+          <input type="text" name="Bank Account No." placeholder="abcd">
+          <br><br><label for="IPSC Code"> <strong>IPSC Code</strong></label>
+          <input type="text" name="IPSC Code" placeholder="abcd">
+          <br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+  </div>
+  </div>
+  <script type="text/javascript">
+    div1 = document.getElementById("div1")
+    div2 = document.getElementById("div2")
+    btn1 = document.getElementById("tab1")
+    btn2 = document.getElementById("tab2")
+
+    function selectTab1() {
+      div1.style.display = "block";
+      div2.style.display = "none";
+      btn1.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+      btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+
+    }
+
+    function selectTab2() {
+      div1.style.display = "none";
+      div2.style.display = "block";
+      btn2.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+      btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+
+    }
+
+    btn1.addEventListener("click", selectTab1, false);
+    btn2.addEventListener("click", selectTab2, false);
+  </script>

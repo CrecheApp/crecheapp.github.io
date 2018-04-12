@@ -1,0 +1,220 @@
+---
+layout: default
+title: Creche Students Details
+permalink: /creche/students
+---
+<div id='crecheStudents'>
+  <div class="tab_cont">
+    <button type="button" id="tab1" class="tab-3 default_tab">View Students</button>
+    <button type="button" id="tab2" class="tab-3">Add Students</button>
+    <button type="button" id="tab3" class="tab-3">Delete Students</button>
+  </div>
+
+  <div id="div1" class="vw_cr_chl">
+    <div class="tableview">
+      <table style="width: 100%">
+        <tr>
+          <th>S.No</th>
+          <th>NAME</th>
+          <th>Father Name</th>
+          <th>Mother Name</th>
+          <th>DOB</th>
+          <th>Address</th>
+          <th>Contact No.</th>
+          <th>Adhaar No.</th>
+          <th>Category</th>
+          <th>BPL</th>
+          <th>PHYSICALLY CHALLENGE</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="div2" class="ad_cr_chl">
+    <form action="#">
+      <fieldset>
+        <legend>Student Details:</legend>
+        <label for="Name"> <strong>Name:</strong></label>
+        <input type="text" name="Name" placeholder="abcd">
+        <br><br>
+        <label for=" Father Name"> <strong>Father Name:</strong></label>
+        <input type="text" name="Father Name" placeholder="abcd">
+        <br><br>
+        <label for=" Mother Name"> <strong>Mother Name</strong></label>
+        <input type="text" name=" Mother Name" placeholder="abcd">
+        <br><br>
+        <label for="Dob"> <strong>Date of Birth:</strong></label>
+        <input type="date" name="Name" placeholder="abcd">
+        <br><br>
+        <label for="address"><strong>Address:</strong></label>
+        <input type="email" name="address" placeholder="">
+        <br><br>
+        <label for="Contact No."> <strong>Contact No.</strong></label>
+        <input type="text" name="Contact No." placeholder="abcd">
+        <br><br>
+        <label for=" Adhaar No."> <strong>Adhaar No.:</strong></label>
+        <input type="text" name="Adhaar No." placeholder="abcd">
+        <br><br>
+        <label for="Category"><strong>Category:</strong></label>
+        <input type="text" name="Category" list="namelist">
+        <datalist id="namelist">
+                 <option value="General">
+                 <option value="SC/St">
+                 <option value="OBC">
+                 <option value="Others">
+             </datalist>
+        <br><br>
+        <label for="bpl"><strong>BPL :</strong></label>
+        <input type="radio" name="bpl" value="Yes">YES
+        <input type="radio" name="bpl" value="NO">NO
+        <br><br>
+        <label for=" Is Pyschically Challanged ?"><strong> Is Pyschically Challanged ? </strong></label>
+        <input type="radio" name="Is Pyschically Challanged ?" value="Yes">YES
+        <input type="radio" name="IS Pyschically Challanged ?" value="NO">NO
+        <br> <br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+
+  <div id="div3" class="dl_cr_chl">
+    <div class="tableview">
+      <table style="width: 100%">
+        <tr>
+          <th>S.No</th>
+          <th>NAME</th>
+          <th>Father Name</th>
+          <th>Mother Name</th>
+          <th>DOB</th>
+          <th>Address</th>
+          <th>Contact No.</th>
+          <th>Adhaar No.</th>
+          <th>Category</th>
+          <th>BPL</th>
+          <th>PHYSICALLY CHALLENGE</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td> Abhishek Mathur</td>
+          <td> Suresh Mathur</td>
+          <td>Nirmla Mathur</td>
+          <td>02/05/2005</td>
+          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
+          <td>9001541588</td>
+          <td>44242141</td>
+          <td>OBC</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    div1 = document.getElementById("div1")
+    div2 = document.getElementById("div2")
+    div3 = document.getElementById("div3")
+    btn1 = document.getElementById("tab1")
+    btn2 = document.getElementById("tab2")
+    btn3 = document.getElementById("tab3")
+
+    function selectTab1() {
+      div1.style.display = "block";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      btn1.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+      btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+      btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    }
+
+    function selectTab2() {
+      div1.style.display = "none";
+      div2.style.display = "block";
+      div3.style.display = "none";
+      btn2.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+      btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+      btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    }
+
+    function selectTab3() {
+      div1.style.display = "none";
+      div3.style.display = "block";
+      div2.style.display = "none";
+      btn3.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+      btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+      btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    }
+
+    btn1.addEventListener("click", selectTab1, false);
+    btn2.addEventListener("click", selectTab2, false);
+    btn3.addEventListener("click", selectTab3, false);
+  </script>

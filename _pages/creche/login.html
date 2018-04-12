@@ -1,22 +1,71 @@
-<h3>Creche login/signup</h3>
-      
-   <div class="login">
-   
+---
+layout: default
+title: Creche Login
+permalink: /creche/login
+---
+<div id='crecheLogin'>
+  <div class="tab_cont">
+    <button type="button" id="tab1" class="tab-2 default_tab">LogIn</button>
+    <button type="button" id="tab2" class="tab-2">SignUp</button>
+  </div>
+
+  <div id="div1" class="lg_cr">
     <form action="#">
-        <fieldset>
-            <legend>Login here:</legend>
-            <label for="Name"> Creche Name </label>
-            <input type="text" name="Name">
-            <br><br>
-            <label for="email">Email-id</label>
-            <input type="email" name="email">
-            <br><br>
-            <label for="pass">Password</label>
-            <input type="password" name="pass">
-            <br><br>
-            <input type="submit" value ="Login">
-            <h4>New user?<a href="signup.html">Signup here</a></h4>
-        </fieldset>
-        
-    </form> 
+      <fieldset>
+        <legend><i>Login here:</i></legend>
+        <label for="email"><strong>Email-id:</strong></label>
+        <input type="email" name="email">
+        <br><br>
+        <label for="pass"><strong>Password:</strong></label>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" value="Login">
+      </fieldset>
+    </form>
+  </div>
+
+  <div id="div2" class="sg_cr">
+    <form>
+      <fieldset>
+        <legend>Signup here:</legend>
+        <label for="Name"> <strong>Creche Name:</strong></label>
+        <input type="text" name="Name" placeholder="abcd">
+        <br><br>
+        <label for="email"><strong>Email-id:</strong></label>
+        <input type="email" name="email" placeholder="abc@domain.com">
+        <br><br>
+        <label for="pass"><strong>Password:</strong></label>
+        <input type="password" name="pass" placeholder="0-9&a-z&A-Z">
+        <br><br>
+        <input type="submit" value="Signup">
+      </fieldset>
+    </form>
+  </div>
+
 </div>
+
+<script type="text/javascript">
+  div1 = document.getElementById("div1")
+  div2 = document.getElementById("div2")
+  btn1 = document.getElementById("tab1")
+  btn2 = document.getElementById("tab2")
+
+  function selectTab1() {
+    div1.style.display = "block";
+    div2.style.display = "none";
+    btn1.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+
+  }
+
+  function selectTab2() {
+    div1.style.display = "none";
+    div2.style.display = "block";
+    btn2.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+
+  }
+
+  btn1.addEventListener("click", selectTab1, false);
+  btn2.addEventListener("click", selectTab2, false);
+</script>
