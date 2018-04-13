@@ -15,7 +15,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
@@ -24,8 +24,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round w3-white">
         <div class="w3-container">
          <h4 class="w3-center">Creche Profile</h4>
-         <p class="w3-center"><img src="../images/cr.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-         <hr>
          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Abc creche </p>
           <p><i class="fa fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> abccreche@gmail.com</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Rajasthan</p>
@@ -36,42 +34,19 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
             <p><i class="fa 	fa fa-institution fa-fw w3-margin-right w3-text-theme"></i> Bank Name- HDFC bank</p>
              <p><i class="fa fa-qrcode fa-fw w3-margin-right w3-text-theme"></i> Bank Account No.- 33141c32</p>
               <p><i class="fa  fa-wrench fa-fw w3-margin-right w3-text-theme"></i> IPSC Code -3Ab3ca</p>
-            <a href="../creche/crecheedit.html"><button style="font-size:12px">Edit profile<i class="fa fa-pencil"></i></button></a>
+            <a href="../creche/details"><button style="font-size:12px">View Profile <i class="fa fa-pencil"></i></button></a>
             <br> <br>
         </div>
       </div>
-    
-      
-<!--
-   
-      <br>
-      
-       Interests  
-      <div class="w3-card w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <br>
-              <label for="s"> <i class=" fa fa-pencil"></i></label>
-            <input type="submit" value="Edit Profile" name="s">
-            
-          <p>
-          
-          </p>
-        </div>
-      </div>
-      
-      <br>
-      
--->
-    
-    
+
+
     <!-- End Left Column -->
     </div>
-    
+
     <!-- Middle Column -->
     <div class="w3-col m9 " style="width: 60%; margin: auto 90px">
-    
-      
-      
+
+
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
        <h2 class="w3-text-grey w3-padding-16">
        <i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
@@ -79,21 +54,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <hr class="w3-clear">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <div class="w3-row-padding" style="margin:0 -16px">
-<!--
-            <div class="w3-half">
-              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
-          </div>
--->
+
         </div>
-        <a href="../creche/studentview.html"><button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-low-vision"></i>  View</button></a> 
-        <a href="../creche/studentedit.html"><button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-user-plus"></i>  Edit</button></a>
-        <a href="../creche/studentdelete.html"><button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-user-times"></i>  Delete</button> 
-</a> 
+        <a href="../creche/students"><button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-eye"></i> View More ...</button></a>
+</a>
       </div>
-      
+
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
        <h2 class="w3-text-grey w3-padding-16">
        <i class="fa fa-users fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
@@ -110,16 +76,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           </div>
 -->
         </div>
-        <a href="../creche/staffview.html"><button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-low-vision"></i>  View</button></a>
-        <a href="../creche/staffedit.html"><button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-user-plus"></i>  Edit</button></a>
-        <a href="../creche/staffdelete.html"><button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-user-times"></i>  Delete</button> </a> 
+        <a href="../creche/staff"><button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-eye"></i> View More ...</button></a>
       </div>
     <!-- End Middle Column -->
     </div>
-    
+
   <!-- End Grid -->
   </div>
-  
+
 <!-- End Page Container -->
 </div>
 <br>
@@ -131,9 +95,9 @@ function myFunction(id) {
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
         x.previousElementSibling.className += " w3-theme-d1";
-    } else { 
+    } else {
         x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = 
+        x.previousElementSibling.className =
         x.previousElementSibling.className.replace(" w3-theme-d1", "");
     }
 }
@@ -143,11 +107,11 @@ function openNav() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }
 </script>
 
 </body>
-</html> 
+</html>
