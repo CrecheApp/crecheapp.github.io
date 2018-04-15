@@ -1,0 +1,73 @@
+<head>
+<style>
+    body{
+        background-image: url(../images/4476-blurred-dark-blue-background.jpg);
+        background-repeat: no-repeat;
+        
+    }
+    .container{
+        background-color: white;
+        width:50%;
+        margin: 100px auto;
+        border-radius: 15px;
+    }
+    form{
+        padding: 10px 200px;
+    }
+    input[type=submit]{
+    background-color: #0707ed;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 25px 90px;
+    cursor: pointer;
+}
+    input[type=email]{
+        margin: 0px 28px;
+    }
+     input[type=password]{
+        margin: 0px 5px;
+    }
+</style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    
+    <div class="container">
+       <h2 style="text-align: center; margin: 10px; padding: 20px; color: mediumblue;">Login</h2>
+        <form action="#">
+            <label for="mail"><strong>Email</strong></label>
+            <input type="email" name="mail">
+            <br><br>
+            <label for="pass"><strong>Password</strong></label>
+            <input type="password" name="pass">
+            <br><br>
+            <label for="state"><strong>Select State</strong></label>
+                    <input type="text" name="state" list="namelist">
+                    <datalist id="namelist">
+                        <option value="Rajasthan">
+                        <option value="Pune">
+                        <option value="Maharastra">
+                        <option value="Haryana">
+                    </datalist>
+                    <br><br>
+            <label for="Select City"><strong>Select City</strong></label>
+                    <input type="text" name="Select City" list="namelist">
+                    <datalist id="namelist">
+                        <option value="jaipur">
+                        <option value="delhi">
+                        <option value="jhodpur">
+                        <option value="Mumbai">
+                    </datalist>
+                    <input type="submit" value='Login'>
+        </form>
+    </div>
+</body>
