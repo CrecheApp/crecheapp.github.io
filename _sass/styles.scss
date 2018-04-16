@@ -85,3 +85,34 @@ body {
     text-decoration: none;
   }
 }
+
+/*-----------------Home Page-------------------------*/
+#homePage{
+  a{
+    text-decoration: none;
+    cursor: pointer;    
+  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  .blocks{
+    margin: 20px;
+    text-align: center;
+    min-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 2%;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgb(240, 2, 38)),to(rgb(194, 6, 17)));
+    background: linear-gradient(rgb(240, 2, 38),rgb(194, 6, 17));
+  h1{
+    color: white;
+    margin-top: 30%;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 50px;
+  }
+  }
+}

@@ -1,0 +1,74 @@
+/*-------------Login/Signup------------------*/
+#govtLogin {
+  #div2 {
+    display: none;
+  }
+
+  .lg_cr {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 20%;
+    margin: 50px auto;
+  }
+
+  .sg_cr {
+    padding: 20px;
+    background-color: #9a9aea;
+    width: 50%;
+    margin: 50px auto;
+  }
+}
+
+#dashboard {
+  form {
+    padding: 10px 200px;
+  }
+
+  input[type=submit] {
+    background-color: #0707ed;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 25px 90px;
+    cursor: pointer;
+  }
+}
+
+#crecheDetails {
+  #div2,
+  #div3 {
+    display: none;
+  }
+
+  .gt_cr_dt {}
+
+  .gt_st_dt,
+  .gt_staff_dt {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+     tr:hover {
+      background-color: #ddd;
+    }
+
+     th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #1e2d83;
+      color: white;
+    }
+  }
+}

@@ -12,9 +12,10 @@ permalink: /creche/students
 
   <div id="div1" class="vw_cr_chl">
     <div class="tableview">
-      <table style="width: 100%">
+      <table style="width: 100%" id="studentRecord">
         <tr>
-          <th>S.No</th>
+          <th>S.No.</th>
+          <th>Reg. No.</th>
           <th>NAME</th>
           <th>Father Name</th>
           <th>Mother Name</th>
@@ -26,76 +27,40 @@ permalink: /creche/students
           <th>BPL</th>
           <th>PHYSICALLY CHALLENGE</th>
         </tr>
-        <tr>
-          <td>1.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-        </tr>
       </table>
     </div>
   </div>
 
   <div id="div2" class="ad_cr_chl">
-    <form action="#">
+    <form id="addStudent">
       <fieldset>
         <legend>Student Details:</legend>
         <label for="Name"> <strong>Name:</strong></label>
-        <input type="text" name="Name" placeholder="abcd">
+        <input type="text" name="name" placeholder="abcd">
+        <br><br>
+        <label for="Regestration No."> <strong>Reg. No. :</strong></label>
+        <input type="text" name="regno" placeholder="abcd">
         <br><br>
         <label for=" Father Name"> <strong>Father Name:</strong></label>
-        <input type="text" name="Father Name" placeholder="abcd">
+        <input type="text" name="fname" placeholder="abcd">
         <br><br>
         <label for=" Mother Name"> <strong>Mother Name</strong></label>
-        <input type="text" name=" Mother Name" placeholder="abcd">
+        <input type="text" name="mname" placeholder="abcd">
         <br><br>
         <label for="Dob"> <strong>Date of Birth:</strong></label>
-        <input type="date" name="Name" placeholder="abcd">
+        <input type="date" name="dob" placeholder="abcd">
         <br><br>
         <label for="address"><strong>Address:</strong></label>
-        <input type="email" name="address" placeholder="">
+        <input type="text" name="address" placeholder="">
         <br><br>
         <label for="Contact No."> <strong>Contact No.</strong></label>
-        <input type="text" name="Contact No." placeholder="abcd">
+        <input type="text" name="phone" placeholder="abcd">
         <br><br>
         <label for=" Adhaar No."> <strong>Adhaar No.:</strong></label>
-        <input type="text" name="Adhaar No." placeholder="abcd">
+        <input type="text" name="aadhar" placeholder="abcd">
         <br><br>
         <label for="Category"><strong>Category:</strong></label>
-        <input type="text" name="Category" list="namelist">
+        <input type="text" name="cat" list="namelist">
         <datalist id="namelist">
                  <option value="General">
                  <option value="SC/St">
@@ -105,11 +70,11 @@ permalink: /creche/students
         <br><br>
         <label for="bpl"><strong>BPL :</strong></label>
         <input type="radio" name="bpl" value="Yes">YES
-        <input type="radio" name="bpl" value="NO">NO
+        <input type="radio" name="bpl" value="No">NO
         <br><br>
         <label for=" Is Pyschically Challanged ?"><strong> Is Pyschically Challanged ? </strong></label>
-        <input type="radio" name="Is Pyschically Challanged ?" value="Yes">YES
-        <input type="radio" name="IS Pyschically Challanged ?" value="NO">NO
+        <input type="radio" name="pc" value="Yes">YES
+        <input type="radio" name="pc" value="No">NO
         <br> <br>
         <input type="submit" value="Submit">
       </fieldset>
@@ -117,10 +82,17 @@ permalink: /creche/students
   </div>
 
   <div id="div3" class="dl_cr_chl">
+    <style>
+      label > input{
+        visibility: hidden;
+        position: absolute;
+      }
+    </style>
     <div class="tableview">
-      <table style="width: 100%">
+      <table style="width: 100%" id="deleteStudent">
         <tr>
           <th>S.No</th>
+          <th>Reg. No.</th>
           <th>NAME</th>
           <th>Father Name</th>
           <th>Mother Name</th>
@@ -132,48 +104,6 @@ permalink: /creche/students
           <th>BPL</th>
           <th>PHYSICALLY CHALLENGE</th>
           <th>Action</th>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td> Abhishek Mathur</td>
-          <td> Suresh Mathur</td>
-          <td>Nirmla Mathur</td>
-          <td>02/05/2005</td>
-          <td>3-c ,vaishali Nagar,Jaipur, Rajasthan</td>
-          <td>9001541588</td>
-          <td>44242141</td>
-          <td>OBC</td>
-          <td>Yes</td>
-          <td>No</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
         </tr>
       </table>
     </div>
@@ -218,3 +148,6 @@ permalink: /creche/students
     btn2.addEventListener("click", selectTab2, false);
     btn3.addEventListener("click", selectTab3, false);
   </script>
+  <script src="/assets/js/firebase.js"></script>
+  <script src="/assets/js/student.js"></script>
+  <script src="/assets/js/auth.js"></script>

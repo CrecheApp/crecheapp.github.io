@@ -10,11 +10,11 @@ permalink: /creche/login
   </div>
 
   <div id="div1" class="lg_cr">
-    <form action="#">
+    <form id="crecheLoginForm">
       <fieldset>
         <legend><i>Login here:</i></legend>
         <label for="email"><strong>Email-id:</strong></label>
-        <input type="email" name="email">
+        <input type="email" name="email" autocomplete="on">
         <br><br>
         <label for="pass"><strong>Password:</strong></label>
         <input type="password" name="pass">
@@ -25,11 +25,11 @@ permalink: /creche/login
   </div>
 
   <div id="div2" class="sg_cr">
-    <form>
+    <form id="crecheSignup">
       <fieldset>
         <legend>Signup here:</legend>
         <label for="Name"> <strong>Creche Name:</strong></label>
-        <input type="text" name="Name" placeholder="abcd">
+        <input type="text" name="name" placeholder="abcd">
         <br><br>
         <label for="email"><strong>Email-id:</strong></label>
         <input type="email" name="email" placeholder="abc@domain.com">
@@ -69,3 +69,5 @@ permalink: /creche/login
   btn1.addEventListener("click", selectTab1, false);
   btn2.addEventListener("click", selectTab2, false);
 </script>
+<script src="/assets/js/firebase.js"></script>
+<script src="/assets/js/login.js"></script>

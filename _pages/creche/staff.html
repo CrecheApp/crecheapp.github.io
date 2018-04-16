@@ -12,9 +12,10 @@ permalink: /creche/staff
 
   <div id="div1" class="vw_cr_st">
     <div class="tableview">
-      <table style="width: 100%">
+      <table style="width: 100%" id="staffRecord">
         <tr>
           <th>S.No</th>
+          <th>Reg. No.</th>
           <th>NAME</th>
           <th>DOB</th>
           <th>Deignation</th>
@@ -24,68 +25,38 @@ permalink: /creche/staff
           <th>Qualifications</th>
           <th>Category</th>
         </tr>
-        <tr>
-          <td>1.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-        </tr>
       </table>
     </div>
   </div>
 
   <div id="div2" class="ad_cr_st">
-    <form action="#">
+    <form id="addStaff">
       <fieldset>
-        <legend>Student Details:</legend>
+        <legend>Staff Details:</legend>
         <label for="Name"> <strong>Name:</strong></label>
-        <input type="text" name="Name" placeholder="abcd">
+        <input type="text" name="name" placeholder="abcd">
+        <br><br>
+        <label for="Regestration No."> <strong>Reg. No. :</strong></label>
+        <input type="text" name="regno" placeholder="abcd">
         <br><br>
         <label for="Dob"> <strong>Date of Birth:</strong></label>
-        <input type="date" name="Name" placeholder="abcd">
+        <input type="date" name="dob" placeholder="abcd">
         <br><br>
         <label for=" Designation"> <strong>Designation</strong></label>
-        <input type="text" name=" Designation" placeholder="abcd">
+        <input type="text" name="desg" placeholder="abcd">
         <br><br>
         <label for="address"><strong>Address:</strong></label>
-        <input type="email" name="address" placeholder="">
+        <input type="text" name="address" placeholder="">
         <br><br>
         <label for="Contact No."> <strong>Contact No.</strong></label>
-        <input type="text" name="Contact No." placeholder="abcd">
+        <input type="text" name="phone" placeholder="abcd">
         <br><br>
         <label for=" Adhaar No."> <strong>Adhaar No.:</strong></label>
-        <input type="text" name="Adhaar No." placeholder="abcd">
+        <input type="text" name="aadhar" placeholder="abcd">
         <br><br>
         <label for="Category"><strong>Qualification:</strong></label>
-        <input type="text" name="Category" list="namelist">
-        <datalist id="namelist">
+        <input type="text" name="edu" list="qual">
+        <datalist id="qual">
                   <option value="10th pass">
                   <option value="12th pass">
                   <option value="Graduation">
@@ -93,8 +64,8 @@ permalink: /creche/staff
               </datalist>
         <br><br>
         <label for="Category"><strong>Category:</strong></label>
-        <input type="text" name="Category" list="namelist">
-        <datalist id="namelist">
+        <input type="text" name="cat" list="cat">
+        <datalist id="cat">
                   <option value="General">
                   <option value="SC/St">
                   <option value="OBC">
@@ -108,9 +79,16 @@ permalink: /creche/staff
 
   <div id="div3" class="dl_cr_st">
     <div class="tableview">
-      <table style="width: 100%">
+      <style>
+        label > input{
+          visibility: hidden;
+          position: absolute;
+        }
+      </style>
+      <table style="width: 100%" id='deleteStaff'>
         <tr>
           <th>S.No</th>
+          <th>Reg. No.</th>
           <th>NAME</th>
           <th>DOB</th>
           <th>Deignation</th>
@@ -119,43 +97,7 @@ permalink: /creche/staff
           <th>Adhaar No.</th>
           <th>Qualifications</th>
           <th>Category</th>
-          <th>ACTION</th>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td> Kanta Devir</td>
-          <td>13/03/1965</td>
-          <td>Seeker</td>
-          <td>3-c ,Malviya nagarr,Jaipur, Rajasthan</td>
-          <td>9008748221</td>
-          <td>4325251</td>
-          <td>Graduation</td>
-          <td>General</td>
-          <td><a href="#"><i class ="fa fa-trash"></i></a></td>
+          <th>Action</th>
         </tr>
       </table>
     </div>
@@ -201,3 +143,6 @@ permalink: /creche/staff
   btn2.addEventListener("click", selectTab2, false);
   btn3.addEventListener("click", selectTab3, false);
 </script>
+<script src="/assets/js/firebase.js"></script>
+<script src="/assets/js/staff.js"></script>
+<script src="/assets/js/auth.js"></script>

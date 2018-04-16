@@ -12,30 +12,29 @@ permalink: /creche/details
   <div id="div1" class="vw_cr_dt">
     <div class="w3-card w3-round w3-white">
       <div class="w3-container">
-        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Abc creche </p>
-        <p><i class="fa fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> abccreche@gmail.com</p>
-        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Rajasthan</p>
-        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> jaipur</p>
-        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Address- C3,Vaishali nagar,jaipur</p>
-        <p><i class="fa fa-child fa-fw w3-margin-right w3-text-theme"></i>No. of Child- <strong>46</strong></p>
-        <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> Contact no -90014514588</p>
-        <p><i class="fa 	fa fa-institution fa-fw w3-margin-right w3-text-theme"></i> Bank Name- HDFC bank</p>
-        <p><i class="fa fa-qrcode fa-fw w3-margin-right w3-text-theme"></i> Bank Account No.- 33141c32</p>
-        <p><i class="fa  fa-wrench fa-fw w3-margin-right w3-text-theme"></i> IPSC Code -3Ab3ca</p>
+        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <span id='name'></span> </p>
+        <p><i class="fa fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> <span id='email'></span> </p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <span id='state'></span> </p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <span id='city'></span></p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Address - <span id='address'></span></p>
+        <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> Contact no - <span id='phone'></span></p>
+        <p><i class="fa 	fa fa-institution fa-fw w3-margin-right w3-text-theme"></i> Bank Name- <span id='bank'></span></p>
+        <p><i class="fa fa-qrcode fa-fw w3-margin-right w3-text-theme"></i> Bank Account No.- <span id='accno'></span></p>
+        <p><i class="fa  fa-wrench fa-fw w3-margin-right w3-text-theme"></i> IFSC Code - <span id='ifsc'></span></p>
       </div>
     </div>
   </div>
   <div id="div2" class="ed_cr_dt">
 
     <div class="signup">
-      <form action="#">
+      <form id="addProfile">
         <fieldset>
           <legend>Student Details:</legend>
           <label for="Name"> <strong>Name:</strong></label>
-          <input type="text" name="Name" placeholder="abcd">
+          <input type="text" name="name" placeholder="abcd">
           <br><br>
           <label for="State"><strong>State:</strong></label>
-          <input type="text" name="State" list="namelist">
+          <input type="text" name="state" list="namelist">
           <datalist id="namelist">
                    <option value="Rajasthan">
                    <option value="Madhya Pradesh">
@@ -44,7 +43,7 @@ permalink: /creche/details
                </datalist>
           <br><br>
           <label for="City"><strong>City:</strong></label>
-          <input type="text" name="City" list="namelist">
+          <input type="text" name="city" list="namelist">
           <datalist id="namelist">
                    <option value="Jaipur">
                    <option value="Kanpur">
@@ -53,17 +52,17 @@ permalink: /creche/details
                </datalist>
           <br><br>
           <label for="address"><strong>Address:</strong></label>
-          <input type="email" name="address" placeholder="">
+          <input type="text" name="address" placeholder="">
           <br><br>
           <label for="Contact No."> <strong>Contact No.</strong></label>
-          <input type="text" name="Contact No." placeholder="abcd">
+          <input type="tel" name="phone" placeholder="abcd">
           <br><br>
           <label for="Bank Name"> <strong>Bank Name</strong></label>
-          <input type="text" name="Bank Name" placeholder="abcd">
+          <input type="text" name="bank" placeholder="abcd">
           <br><br><label for="Bank Account No."> <strong>Bank Account No.</strong></label>
-          <input type="text" name="Bank Account No." placeholder="abcd">
-          <br><br><label for="IPSC Code"> <strong>IPSC Code</strong></label>
-          <input type="text" name="IPSC Code" placeholder="abcd">
+          <input type="text" name="accno" placeholder="abcd">
+          <br><br><label for="ifsc"> <strong>IPSC Code</strong></label>
+          <input type="text" name="ifsc" placeholder="abcd">
           <br><br>
           <input type="submit" value="Submit">
         </fieldset>
@@ -96,3 +95,6 @@ permalink: /creche/details
     btn1.addEventListener("click", selectTab1, false);
     btn2.addEventListener("click", selectTab2, false);
   </script>
+  <script src="/assets/js/firebase.js"></script>
+  <script src="/assets/js/addProfile.js"></script>
+  <script src="/assets/js/auth.js"></script>

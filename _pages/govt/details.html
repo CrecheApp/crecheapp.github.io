@@ -1,0 +1,114 @@
+---
+layout: default
+title: Creche Details
+permalink: /govt/crecheDetails/
+---
+<div id='crecheDetails'>
+  <div class="tab_cont">
+    <button type="button" id="tab1" class="tab-3 default_tab">Creche Details</button>
+    <button type="button" id="tab2" class="tab-3">Student Details</button>
+    <button type="button" id="tab3" class="tab-3">Staff Details</button>
+  </div>
+
+  <div id="div1" class="gt_cr_dt">
+
+    <!-- Page Container -->
+    <div class="w3-container w3-content" style="max-width:700px;margin-top:50px">
+      <!-- The Grid -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+          <h4 class="w3-center">Creche Profile</h4>
+          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <span id='name'></span> </p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <span id='state'></span> </p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> <span id='city'></span></p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Address - <span id='address'></span></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> Contact no - <span id='phone'></span></p>
+          <p><i class="fa 	fa fa-institution fa-fw w3-margin-right w3-text-theme"></i> Bank Name- <span id='bank'></span></p>
+          <p><i class="fa fa-qrcode fa-fw w3-margin-right w3-text-theme"></i> Bank Account No.- <span id='accno'></span></p>
+          <p><i class="fa  fa-wrench fa-fw w3-margin-right w3-text-theme"></i> IFSC Code - <span id='ifsc'></span></p>
+          <br> <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="div2" class="gt_st_dt">
+    <table style="width: 100%" id="studentRecord">
+      <tr>
+        <th>S.No.</th>
+        <th>Reg. No.</th>
+        <th>NAME</th>
+        <th>Father Name</th>
+        <th>Mother Name</th>
+        <th>DOB</th>
+        <th>Address</th>
+        <th>Contact No.</th>
+        <th>Adhaar No.</th>
+        <th>Category</th>
+        <th>BPL</th>
+        <th>PHYSICALLY CHALLENGE</th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="div3" class="gt_staff_dt">
+    <table style="width: 100%" id="staffRecord">
+      <tr>
+        <th>S.No</th>
+        <th>Reg. No.</th>
+        <th>NAME</th>
+        <th>DOB</th>
+        <th>Deignation</th>
+        <th>Address</th>
+        <th>Contact No.</th>
+        <th>Adhaar No.</th>
+        <th>Qualifications</th>
+        <th>Category</th>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  div1 = document.getElementById("div1")
+  div2 = document.getElementById("div2")
+  div3 = document.getElementById("div3")
+  btn1 = document.getElementById("tab1")
+  btn2 = document.getElementById("tab2")
+  btn3 = document.getElementById("tab3")
+
+  function selectTab1() {
+    div1.style.display = "block";
+    div2.style.display = "none";
+    div3.style.display = "none";
+    btn1.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  function selectTab2() {
+    div1.style.display = "none";
+    div2.style.display = "block";
+    div3.style.display = "none";
+    btn2.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn3.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  function selectTab3() {
+    div1.style.display = "none";
+    div3.style.display = "block";
+    div2.style.display = "none";
+    btn3.style.background = "linear-gradient(rgb(241, 139, 5),rgb(235, 50, 9))";
+    btn1.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+    btn2.style.background = "linear-gradient(rgb(0, 17, 108),rgb(22, 78, 175))";
+  }
+
+  btn1.addEventListener("click", selectTab1, false);
+  btn2.addEventListener("click", selectTab2, false);
+  btn3.addEventListener("click", selectTab3, false);
+</script>
+<script src="/assets/js/firebase.js"></script>
+<script src="/assets/js/details.js"></script>
+<script src="/assets/js/auth.js"></script>

@@ -96,6 +96,59 @@
   width: 50%;
   margin: 50px auto; }
 
+/*-------------Login/Signup------------------*/
+#govtLogin #div2 {
+  display: none; }
+#govtLogin .lg_cr {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 20%;
+  margin: 50px auto; }
+#govtLogin .sg_cr {
+  padding: 20px;
+  background-color: #9a9aea;
+  width: 50%;
+  margin: 50px auto; }
+
+#dashboard form {
+  padding: 10px 200px; }
+#dashboard input[type=submit] {
+  background-color: #0707ed;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 25px 90px;
+  cursor: pointer; }
+
+#crecheDetails #div2,
+#crecheDetails #div3 {
+  display: none; }
+#crecheDetails .gt_st_dt,
+#crecheDetails .gt_staff_dt {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+  #crecheDetails .gt_st_dt td,
+  #crecheDetails .gt_st_dt th,
+  #crecheDetails .gt_staff_dt td,
+  #crecheDetails .gt_staff_dt th {
+    border: 1px solid #ddd;
+    padding: 8px; }
+  #crecheDetails .gt_st_dt tr:nth-child(even),
+  #crecheDetails .gt_staff_dt tr:nth-child(even) {
+    background-color: #f2f2f2; }
+  #crecheDetails .gt_st_dt tr:hover,
+  #crecheDetails .gt_staff_dt tr:hover {
+    background-color: #ddd; }
+  #crecheDetails .gt_st_dt th,
+  #crecheDetails .gt_staff_dt th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1e2d83;
+    color: white; }
+
 .tab-2 {
   width: 48%;
   margin: 5px 2px 5px 2px;
@@ -192,3 +245,30 @@ body {
     text-transform: uppercase;
     font-family: monospace;
     text-decoration: none; }
+
+/*-----------------Home Page-------------------------*/
+#homePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #homePage a {
+    text-decoration: none;
+    cursor: pointer; }
+  #homePage .blocks {
+    margin: 20px;
+    text-align: center;
+    min-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 2%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f00226), to(#c20611));
+    background: linear-gradient(#f00226, #c20611); }
+    #homePage .blocks h1 {
+      color: white;
+      margin-top: 30%;
+      font-weight: bold;
+      font-family: serif;
+      font-size: 50px; }
