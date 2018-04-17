@@ -12,5 +12,6 @@ $('#govtLoginForm').on('submit',function (evt) {
     window.location = "/govt/";
   }).catch(function(error) {
     console.log(error.message);
+    window.alert("Please enter correct email and password");
   });
 });

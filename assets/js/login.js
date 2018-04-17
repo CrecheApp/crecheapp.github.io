@@ -60,5 +60,6 @@ $('#crecheLoginForm').on('submit',function (evt) {
     window.location = "/creche/";
   }).catch(function(error) {
     console.log(error.message);
+    window.alert("Please enter correct user credentials");
   });
 });
